@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>工作日志与链接管理</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>工作日志</h1>
+        <form id="log-form">
+            <input type="hidden" id="log-id" value="">
+            <input type="date" id="log-date" required>
+            <textarea id="log-content" placeholder="内容" required></textarea>
+            <button type="submit">保存</button>
+        </form>
+        <ul id="log-list"></ul>
+
+        <h1>工作链接</h1>
+        <form id="link-form">
+            <input type="hidden" id="link-id" value="">
+            <input type="url" id="link-url" placeholder="URL" required>
+            <input type="text" id="link-desc" placeholder="描述">
+            <button type="submit">保存</button>
+        </form>
+        <ul id="link-list"></ul>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
